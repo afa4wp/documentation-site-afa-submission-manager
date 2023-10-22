@@ -1,15 +1,10 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: 
+tagline: Welcome to our powerful WordPress plugin designed to enhance your form management experience.
 actionText: Quick Start →
 actionLink: /guide/
-features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by  with ❤️
 ---
+
+::: slot footer
+Made by [`WPAFA`](https://github.com/wpafa)
+:::

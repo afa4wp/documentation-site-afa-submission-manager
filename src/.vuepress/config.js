@@ -1,10 +1,14 @@
-const { description } = require('../../package')
+const { description } = require("../../package");
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: "WP ALL Forms API",
+  /**
+   * Ref：https://v1.vuepress.vuejs.org/config/#base
+   */
+  base: "/wpafa/",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,9 +20,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
   /**
@@ -27,44 +34,54 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: "",
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    docsDir: "",
+    editLinkText: "",
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: "Guide",
+        link: "/guide/",
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: "Add New Form Builder",
+        link: "/guide/add-new-form-build/",
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+        text: "Mobile App",
+        link: "https://github.com/wpafa/wp-afa-mobile-app",
+      },
+      {
+        text: "GitHub",
+        link: "https://github.com/wpafa/wp-all-forms-api",
+      },
     ],
     sidebar: {
-      '/guide/': [
+      "/guide/": [
         {
-          title: 'Guide',
-          collapsable: false,
+          title: "WP ALL Forms API",
+          children: ["", "/guide/wpafa/installation/"],
+        },
+        {
+          title: "Add New Form Builder",
+          path: "/guide/add-new-form-build/",
           children: [
-            '',
-            'using-vue',
-          ]
-        }
+            "/guide/add-new-form-build/",
+            "/guide/add-new-form-build/teste",
+          ],
+        },
+        {
+          title: "Mobile App",
+          path: "/guide/mobile-app/",
+          children: ["/guide/mobile-app/"],
+        },
       ],
-    }
+    },
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+};
