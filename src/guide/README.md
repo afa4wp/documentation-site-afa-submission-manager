@@ -2,7 +2,7 @@
 
 This is a plugin for querying data from various forms within the WordPress ecosystem.We simplifies form entry management, providing you with the tools to streamline the process and save time.
 
-![](https://github.com/wpafa/wp-all-forms-api/blob/main/assets/img/screenshot-1.PNG?raw=true)
+![](/images/wp/screenshot-1.png)
 
 ## Form builder plugins
 

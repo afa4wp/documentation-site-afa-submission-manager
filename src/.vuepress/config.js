@@ -61,15 +61,16 @@ module.exports = {
       "/guide/": [
         {
           title: "WP ALL Forms API",
-          children: ["", "/guide/wpafa/installation/"],
+          children: [
+            "",
+            "/guide/wpafa/installation/",
+            "/guide/wpafa/plugin-struture/",
+          ],
         },
         {
           title: "Add New Form Builder",
           path: "/guide/add-new-form-build/",
-          children: [
-            "/guide/add-new-form-build/",
-            "/guide/add-new-form-build/teste",
-          ],
+          children: ["/guide/add-new-form-build/"],
         },
         {
           title: "Mobile App",
